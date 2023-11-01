@@ -350,14 +350,15 @@ This is an example of the capabilities
 ```
   const capabilities = {
     # related to the device and its driver
+    "platformName": "Android",
     "appium:deviceName": "Android",             
-    "appium:automationName": "UiAutomator2", -> the name of the driver doing the automation
-    "appium:avd":  "Pixel_6_API_34",         -> name of the emulator that is going to be used, it should exist but it will be started if not already running    
+    "appium:automationName": "UiAutomator2", #-> the name of the driver doing the automation
+    "appium:avd":  "Pixel_6_API_34",         #-> name of the emulator that is going to be used, it should exist but it will be started if not already running    
 
     # related to the app to test
-    "appium:appPackage": "org.wikipedia.dev",->the application id of your app. You can find it in the build.gradle?? file. 
-    "appium:app": PACKAGE_PATH,              ->the path to where the apk of the build you want to test is located. Will be installed.   
-    "appium:appActivity": "org.wikipedia.main.MainActivity", -> what page of your app you want to open
+    "appium:appPackage": "org.wikipedia.dev",#->the application id of your app. You can find it in the build.gradle?? file. 
+    "appium:app": PACKAGE_PATH,              #->the path to where the apk of the build you want to test is located. Will be installed.   
+    "appium:appActivity": "org.wikipedia.main.MainActivity", #-> what screen of your app you want to open
   }
 
 ```
