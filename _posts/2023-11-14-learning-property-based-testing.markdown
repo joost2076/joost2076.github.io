@@ -10,7 +10,7 @@ categories: Testing
 
   @media(min-width:1000px){
     .wrapper{
-      max-width:calc(80%);
+      max-width:80%;
     }
 
   }
